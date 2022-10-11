@@ -1,0 +1,94 @@
+@import "colors";
+
+#menu {
+    width: 100%;
+    min-height  : 30vh;
+    background-color: rgb(195, 186, 186);
+    padding: 4rem;
+    >h1{
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem;
+        text-shadow: 3px;
+        text-transform: uppercase;
+        color: $red;
+        margin-bottom: 2rem;
+    }
+
+    >div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.menuCard{
+
+    background-color: rgb(225, 197, 195);
+    width: 30%;
+    height: 35%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(83, 82, 82, 0.709);
+    >div{
+        border-radius: 20px 20px 0 0 ;
+        background-color: $red;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        height: 1rem;
+        color: rgb(228, 197, 197);
+    }
+    >main {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >img {
+            height: 10rem;
+            width: 100%;
+            object-fit: contain;
+        }
+        >h4{
+            font-size: 2rem;
+        }
+        >p{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 1rem 0;
+        }
+
+        &:hover{
+            background-color: rgb(246, 201, 147);
+            border-radius:0 0 20px 20px;
+        }
+
+        >button {
+            background-color: $red;
+            color: aliceblue;
+            padding: 1rem 2rem;
+            // border: none;
+            border-radius: 10px;
+            width: 50%;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $reddark;
+            }
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:600px) {
+    #menu>div{
+        flex-direction: column;
+
+    }
+    .menuCard{
+        width: 100%;
+        margin: 1rem 0;
+    }
+}

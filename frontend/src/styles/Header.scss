@@ -1,0 +1,88 @@
+@import "colors";
+
+
+
+nav {
+    height: 5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.334);
+    background: rgb(128, 7, 7);
+    background: linear-gradient(90deg, rgba(128, 7, 7, 1) 19%, rgba(227, 203, 190, 1) 86%);
+
+    >div {
+
+        display: flex;
+        align-items: center;
+
+        >svg {
+            color: aliceblue;
+            font-size: 4.5rem;
+
+        }
+
+        >a {
+            margin: 0% 2rem;
+            color: $dark;
+            transition: color 0.4s;
+            font-size: 1.2rem;
+
+            &:hover {
+                color: aliceblue;
+            }
+
+
+            >svg {
+                color: $dark;
+                font-size: 1.3rem;
+                transition: inherit;
+
+                &:hover {
+                    color: rgb(29, 199, 179);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    nav {
+        padding: 1 rem;
+
+        // >div>a {
+        //     margin: 0 0.45rem;
+        // }
+        >div {
+
+            display: flex;
+            align-items: center;
+
+            >svg {
+                color: aliceblue;
+                font-size: 3rem;
+
+            }
+
+            >a {
+                margin: 0% 0.45rem;
+                color: $dark;
+                transition: color 0.4s;
+                font-size: 1.3rem;
+
+                &:hover {
+                    color: $lightdark;
+                }
+
+
+                >svg {
+                    color: $dark;
+                    font-size: 1.3rem;
+                    transition: inherit;
+                }
+            }
+        }
+    }
+}

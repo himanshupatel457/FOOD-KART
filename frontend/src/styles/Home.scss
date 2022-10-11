@@ -1,0 +1,62 @@
+@import "colors";
+
+
+.home {
+    height: 100vh;
+    overflow: hidden;
+    div {
+        padding-left: 60rem;
+        padding-top: 15rem;
+        align-items: center;
+        >h1{
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+
+        >p {
+            font-size: 1.3rem;
+        }
+    }
+
+    > a {
+        display: block;
+        margin: 2rem 60rem;
+        width: 7rem;
+        background-color: $red;
+        color: aliceblue;
+        text-align: center;
+        border: none;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            background-color: $yellowdark;
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0%;
+        z-index:-1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .home{
+        >div{
+            text-align: center;
+            padding-top: 10rem;
+            padding-left: 0rem;
+        }
+
+        >a {
+            margin: 2rem auto;
+        }
+    }
+}

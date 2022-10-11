@@ -1,0 +1,137 @@
+@import "colors";
+
+.orderDetails {
+    background-color: $pink;
+    width: 100%;
+
+    >main {
+
+        background-color: beige;
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+        overflow-x: auto;
+
+        >h1 {
+            text-transform: uppercase;
+            color: $red;
+            text-align: center;
+            font: 100 3rem "";
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 3rem;
+        }
+
+        >div {
+            margin: 2rem 0;
+            text-align: center;
+
+            >h1 {
+                color: $red;
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            >p {
+                font-weight: 4000;
+                white-space: nowrap;
+                letter-spacing: 1.5px;
+                margin: 2rem;
+
+                >b {
+                    margin-right: 5px;
+
+                }
+            }
+        }
+
+        >section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            >h1 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+                margin: 2rem 0;
+                font-weight: 600;
+                padding: 1.5rem;
+            }
+
+            >div {
+                background-color: rgb(217, 217, 217);
+                margin: 1rem;
+                display: flex;
+                align-items: center;
+                width: 80%;
+                justify-content: space-between;
+                padding: 1rem;
+                font-weight: 100;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-radius: 10px;
+
+
+                &:hover {
+                    background-color: rgb(70, 4, 4);
+                    color: azure;
+                    color: rgba(255, 255, 255, 1);
+                    box-shadow: 0 10px 25px rgba(252, 49, 35, 0.553);
+                    transition: 0.4s;
+
+                }
+
+                >h3 {
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+
+                }
+
+                >div>span {
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+    .subtotal {
+        background-color: rgb(253, 254, 255);
+        font-size: 1.7rem;
+
+        &:hover {
+            background-color: rgb(186, 196, 190);
+            color: rgb(31, 28, 28);
+        }
+
+        >h3 {
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width:820px) {
+    .orderDetails>main>div {
+        >h1 {
+            font-size: 1.4rem;
+        }
+
+        >p {
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            margin: 2rem 0;
+
+        }
+    }
+
+}

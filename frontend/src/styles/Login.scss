@@ -1,0 +1,36 @@
+@import "colors";
+
+
+.login{
+    height: 90vh;
+    width: 100%;
+    background-color: rgba(248, 202, 202, 0.998);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    >button{
+        background-color: aliceblue;
+        color: $reddark;
+        border: 2px solid rgb(62, 6, 6);
+        border-radius: 15px;
+        width: 20%;
+        height: 8%;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-around;
+        &:hover{
+            border-color: rgb(161, 0, 0);
+            background-color: rgb(140, 5, 5);
+            color: rgb(248, 252, 255);
+            transition: 0.7s;
+        }
+
+        >svg{
+            font-size: 2rem;
+        }
+    }
+}
